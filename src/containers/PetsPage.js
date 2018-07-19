@@ -14,12 +14,15 @@ class PetsPage extends Component {
 
   render() {
     return (
-      <div>Pets Page</div>
+      <div>
+        <div>Pets Page</div>
+        <PetsList/>
+      </div>
     )
   }
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   return {
     pets: state.pets
   };
